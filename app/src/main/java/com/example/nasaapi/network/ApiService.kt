@@ -7,11 +7,9 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-
-
     @GET("planetary/apod")
     suspend fun getImageOfTheDay(
         @Query("api_key") api: String,
         @Query("date") data: String
-    ):Response<Day>
+    ): Response<Day>
 }
